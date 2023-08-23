@@ -1,0 +1,75 @@
+{
+"preloader":{"image": "static/logo50_small.png" }
+,"navbar": {
+          "navbarClass": "main-header navbar navbar-expand navbar-white navbar-light"
+          ,"navLinks": [{"name": "Dashboard", "href":"#" ,"actions":{"event":"onClick", "functionName":"$.fn.loadDashboard()", "parameters":{}}
+          } ,{"name":"Build", "href":"#","actions":{"event":"onClick", "functionName":"$.fn.loadBuildDMARC()", "parameters":{}}},{"name":"Review", "href":"#","actions":{"event":"onClick", "functionName":"$.fn.loadReviewDMARC()", "parameters":{}}},{"name":"Setup", "href":"#","actions":{"event":"onClick", "functionName":"$.fn.loadSetup()", "parameters":{}}}]
+
+        }
+ ,"sidebar": {
+            "asideClass":"main-sidebar sidebar-dark-primary elevation-4"
+            ,"sidebarLogo":{
+                  "href": "#"
+               ,"className":"brand-link"
+               ,"image": "static/logo_mini.png"
+               ,"imageClass": "brand-image img-circle elevation-3"
+               ,"imageStyle": "opacity: 0.8"
+               , "spanClass": "brand-text font-weight-light"
+                , "spanText":"DMARC Toolkit"
+                ,"actions":{"event":"onClick", "functionName":"$.fn.loadDashboard()", "parameters":{}}
+               }
+
+            ,"sidebarClass":"sidebar"
+            ,"sidebarUserInfo":{
+            "href": "#"
+            ,"className":"user-panel mt-3 pb-3 mb-3 d-flex"
+            , "image":"static/dist/img/user2-160x160.jpg"
+            ,"imageClass":"img-circle elevation-2"
+            , "username":"@currentUser"
+            }
+            ,"sidebarNav": {
+                        "navClass":"mt-2"
+                        ,"menuClass":"nav nav-pills nav-sidebar flex-column"
+                        ,"menuWidget":"treeview"
+                        ,"dataAccordion": "false"
+                        ,"sidebarNavItems": {
+                        "sidebarNavItemList": [{
+                     "itemClass":"nav-item",
+                    "href": "#",
+                    "navLinkClass":"nav-link",
+                    "itemIconClass": "nav-icon fas fa-upload",
+                    "text": "Upload Report",
+                    "spanClass": "",
+                    "spanText": "",
+                    "position": 0
+                    ,"actions":{"event":"onClick", "functionName":"$.fn.uploadReport('@id')", "parameters":{"@id": "id"}}
+                        } ]
+
+            }
+            }
+
+    }
+,"contentHeader":{
+    "pageTitle":"Email Threats Insight"
+    ,"parentPage":"Dashboard"
+    ,"contentWrapper":{ "contentRows":[ {
+    "dashboardPieCharts":[
+      {"cardClass":"primary","cardTitle":"SPF Alignment","type":"spf"}
+    , {"cardClass":"secondary","cardTitle":"DKIM Alignment","type":"dkim"}
+    , {"cardClass":"dark","cardTitle":"DMARC Alignment","type":"dmarc"}
+    ]
+}
+,{"dashboardGraphs":[{"id":"dmarc-conformance-chart","title":"DMARC Conformance Trend Chart"}]}
+,{"dashboardTables":[{"id":"dmarc-report-table","statsTitle":"DMARC Report", "tableData":[]} ]}
+
+
+]
+,"dashboardReportRange":{"reportStart":"2012-01-01 00:00:00","reportEnd":""}
+}
+}
+
+
+
+
+
+}

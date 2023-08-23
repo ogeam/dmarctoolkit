@@ -1,0 +1,891 @@
+<html lang="en" style="height: auto;">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="/static/favicon.ico?version=1.0.0.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="Web site created using create-react-app">
+  <link rel="apple-touch-icon" href="/static/logo192.png">
+  <link rel="manifest" href="/static/manifest.json">
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="/static/dist/css/sourcesanspro.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="/static/plugins/fontawesome-free/css/all.min.css?version=1.0.0.0">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="/static/dist/css/ionicons.min.css?version=1.0.0.0">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet"
+    href="/static/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css?version=1.0.0.0">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="/static/plugins/icheck-bootstrap/icheck-bootstrap.min.css?version=1.0.0.0">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="/static/plugins/jqvmap/jqvmap.min.css?version=1.0.0.0">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="/static/dist/css/adminlte.min.css?v=3.2.0">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="/static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css?version=1.0.0.0">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="/static/plugins/daterangepicker/daterangepicker.css?version=1.0.0.0">
+  <!-- summernote -->
+  <link rel="stylesheet" href="/static/plugins/summernote/summernote-bs4.min.css?version=1.0.0.0">
+
+  <title>DMRCTKT |Admin Panel</title>
+</head>
+
+<body class="sidebar-mini layout-fixed" style="height: auto;">
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="index-root" class="wrapper">
+    <div class="preloader flex-column justify-content-center align-items-center" style="height: 0px;">
+      <img class="animation__shake" src="static/dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60"
+        style="display: none;">
+    </div>
+    <nav id="navbar-node" class="main-header navbar navbar-expand navbar-white navbar-light">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="/index3.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="#" class="nav-link">Contact</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li id="navbarsearch-node" class="nav-item">
+          <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+            <i class="fas fa-search"></i>
+          </a>
+          <div class="navbar-search-block">
+            <form class="form-inline">
+              <div class="input-group input-group-sm">
+                <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                <div class="input-group-append">
+                  <button class="btn btn-navbar" type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
+                  <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </li>
+        <li id="mediadropdownitemlist-node" class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="far fa-comments"></i>
+            <span class="badge badge-danger navbar-badge">3</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+
+            <a id="mediadropdownitemlist-node-0" href="#" class="dropdown-item">
+              <div class="media">
+                <img src="static/dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+                <div class="media-body">
+                  <h3 class="dropdown-item-title">
+                    Brad Diesel
+                    <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                  </h3>
+                  <p class="text-sm">Call me whenever you can...</p>
+                  <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i>4 Hours Ago </p>
+                </div>
+              </div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a id="mediadropdownitemlist-node-1" href="#" class="dropdown-item">
+              <div class="media">
+                <img src="static/dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle mr-3">
+                <div class="media-body">
+                  <h3 class="dropdown-item-title">
+                    John Pierce
+                    <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                  </h3>
+                  <p class="text-sm">I got your message bro</p>
+                  <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i>4 Hours Ago </p>
+                </div>
+              </div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a id="mediadropdownitemlist-node-2" href="#" class="dropdown-item">
+              <div class="media">
+                <img src="static/dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle mr-3">
+                <div class="media-body">
+                  <h3 class="dropdown-item-title">
+                    Nora Silvester
+                    <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                  </h3>
+                  <p class="text-sm">The subject goes here</p>
+                  <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i>4 Hours Ago </p>
+                </div>
+              </div>
+            </a>
+            <div class="dropdown-divider"></div>
+
+
+            <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+          </div>
+
+        </li>
+        <li id="navdropdownitemlist-node" class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="far fa-bell"></i>
+            <span class="badge badge-warning navbar-badge">15</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <span class="dropdown-item dropdown-header">15 Notifications</span>
+            <div class="dropdown-divider"></div><a id="navdropdownitemlist-node-0" href="#" class="dropdown-item">
+              <i class="fas fa-envelope mr-2"></i>4 new messages
+              <span class="float-right text-muted text-sm">3 mins</span>
+            </a>
+            <div class="dropdown-divider"></div><a id="navdropdownitemlist-node-1" href="#" class="dropdown-item">
+              <i class="fas fa-users mr-2"></i>8 friend requests
+              <span class="float-right text-muted text-sm">12 hours</span>
+            </a>
+            <div class="dropdown-divider"></div><a id="navdropdownitemlist-node-2" href="#" class="dropdown-item">
+              <i class="fas fa-file mr-2"></i>3 new reports
+              <span class="float-right text-muted text-sm">2 days</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+            <i class="fas fa-expand-arrows-alt"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-widget="control-sidebar" data-controlsidebar-slide="true" href="#" role="button">
+            <i class="fas fa-th-large"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <aside id="sidebar-node" class="main-sidebar sidebar-dark-primary elevation-4">
+      <a id="sidebarlogo-node" href="index3.html" class="brand-link"
+        onclick="{$.fn.showText('sidebarlogo-node','AdminLTE 3')}">
+        <img src="static/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+          style="opacity: 0.8">
+        <span class="brand-text font-weight-light">AdminLTE 3</span>
+      </a>
+      <div class="sidebar">
+        <div id="sidebaruserinfo-node" class="user-panel mt-3 pb-3 mb-3 d-flex">
+          <div class="image">
+            <img src="static/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          </div>
+          <div class="info">
+            <a href="#" class="d-block">Alexander Pierce</a>
+          </div>
+        </div>
+        <div class="form-inline">
+          <div class="input-group" data-widget="sidebar-search">
+            <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+
+            <div class="input-group-append">
+              <button class="btn btn-sidebar">
+                <i class="fas fa-search fa-fw"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <nav id="sidebarnav-node" class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <li id="sidebarnav-node-0" class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <p>
+                  Dashboard
+                  <i class="right fas fa-angle-left"></i>
+
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="/index.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Dashboard v1</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="/index2.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Dashboard v2</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="/index3.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Dashboard v3</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li id="sidebarnav-node-1" class="nav-item">
+              <a href="pages/widgets.html" class="nav-link">
+                <i class="nav-icon fas fa-th"></i>
+                <p>
+                  Widgets
+
+                  <span class="right badge badge-danger">New</span>
+                </p>
+              </a>
+            </li>
+            <li id="sidebarnav-node-2" class="nav-item">
+              <a href="" class="nav-link">
+                <i class="nav-icon fas fa-copy"></i>
+                <p>
+                  Layout Options
+                  <i class="fas fa-angle-left right"></i>
+                  <span class="badge badge-info right">6</span>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/layout/top-nav.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Top Navigation</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Top Navigation + Sidebar</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/layout/boxed.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Boxed</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/layout/fixed-sidebar.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Fixed Sidebar</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/layout/fixed-sidebar-custom.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Fixed Sidebar <small> Custom Area</small></p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/layout/fixed-topnav.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Fixed Navbar</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/layout/fixed-footer.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Fixed Footer</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/layout/collapsed-sidebar.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Collapsed Sidebar</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/layout/collapsed-sidebar.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Collapsed Sidebar</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li id="sidebarnav-node-3" class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-chart-pie"></i>
+                <p>
+                  Charts
+                  <i class="right fas fa-angle-left"></i>
+
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/charts/chartjs.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>ChartJS</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/charts/flot.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Flot</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/charts/inline.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Inline</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/charts/uplot.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>uPlot</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li id="sidebarnav-node-4" class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-tree"></i>
+                <p>
+                  UI Elements
+                  <i class="fas fa-angle-left right"></i>
+
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/UI/general.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>General</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/UI/icons.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Icons</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/UI/buttons.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Buttons</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/UI/sliders.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Sliders</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/UI/modals.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Modals &amp; Alerts</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/UI/navbar.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Navbar &amp; Tabs</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/UI/timeline.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Timeline</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/UI/ribbons.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Ribbons</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li id="sidebarnav-node-5" class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-edit"></i>
+                <p>
+                  Forms
+                  <i class="fas fa-angle-left right"></i>
+
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/forms/general.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>General Elements</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/forms/advanced.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Advanced Elements</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/forms/editors.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Editors</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/forms/validation.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Validation</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-header">EXAMPLES</li>
+            <li id="sidebarnav-node-7" class="nav-item">
+              <a href="pages/calendar.html" class="nav-link">
+                <i class="nav-icon far fa-calendar-alt"></i>
+                <p>
+                  Calendar
+
+                  <span class="badge badge-info right">2</span>
+                </p>
+              </a>
+            </li>
+            <li id="sidebarnav-node-8" class="nav-item">
+              <a href="pages/gallery.html" class="nav-link">
+                <i class="nav-icon far fa-image"></i>
+                <p>
+                  Gallery
+
+
+                </p>
+              </a>
+            </li>
+            <li id="sidebarnav-node-9" class="nav-item">
+              <a href="pages/kanban.html" class="nav-link">
+                <i class="nav-icon fas fa-columns"></i>
+                <p>
+                  Kanban Board
+
+
+                </p>
+              </a>
+            </li>
+            <li id="sidebarnav-node-10" class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon far fa-envelope"></i>
+                <p>
+                  Mailbox
+                  <i class="fas fa-angle-left right"></i>
+
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/mailbox/mailbox.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Inbox</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/mailbox/compose.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Compose</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/mailbox/read-mail.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Read</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li id="sidebarnav-node-11" class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-book"></i>
+                <p>
+                  Pages
+                  <i class="fas fa-angle-left right"></i>
+
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/examples/invoice.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Invoice</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/profile.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Profile</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/e-commerce.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>E-commerce</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/projects.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Projects</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/project-add.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Project Add</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/project-edit.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Project Edit</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/project-detail.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Project Detail</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/contacts.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Contacts</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/faq.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>FAQ</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/contact-us.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Contact us</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li id="sidebarnav-node-12" class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon far fa-plus-square"></i>
+                <p>
+                  Extras
+                  <i class="fas fa-angle-left right"></i>
+
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li id="sidebarnav-node-12-0" class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="nav-icon far fa-plus-square"></i>
+                    <p>Login &amp; Register v1</p>
+                    <i class="fas fa-angle-left right"></i>
+                  </a>
+                  <ul class="nav nav-treeview">
+                    <li id="sidebarnav-node-12-0-sub-0" class="nav-item"> <a href="pages/examples/login.html"
+                        class="nav-link"> <i class="nav-icon far fa-plus-square"></i>
+                        <p>Login v1</p>
+                      </a> </li>
+                    <li id="sidebarnav-node-12-0-sub-1" class="nav-item"> <a href="pages/examples/register.html"
+                        class="nav-link"> <i class="nav-icon far fa-plus-square"></i>
+                        <p>Register v1</p>
+                      </a> </li>
+                    <li id="sidebarnav-node-12-0-sub-2" class="nav-item"> <a href="pages/examples/forgot-password.html"
+                        class="nav-link"> <i class="nav-icon far fa-plus-square"></i>
+                        <p>Forgot Password v1</p>
+                      </a> </li>
+                    <li id="sidebarnav-node-12-0-sub-3" class="nav-item"> <a href="pages/examples/recover-password.html"
+                        class="nav-link"> <i class="nav-icon far fa-plus-square"></i>
+                        <p>Recover Password v1</p>
+                      </a> </li>
+                  </ul>
+                </li>
+                <li id="sidebarnav-node-12-1" class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="nav-icon far fa-plus-square"></i>
+                    <p>Login &amp; Register v2</p>
+                    <i class="fas fa-angle-left right"></i>
+                  </a>
+                  <ul class="nav nav-treeview">
+                    <li id="sidebarnav-node-12-1-sub-0" class="nav-item"> <a href="pages/examples/login-v2.html"
+                        class="nav-link"> <i class="nav-icon far fa-plus-square"></i>
+                        <p>Login v2</p>
+                      </a> </li>
+                    <li id="sidebarnav-node-12-1-sub-1" class="nav-item"> <a href="pages/examples/register-v2.html"
+                        class="nav-link"> <i class="nav-icon far fa-plus-square"></i>
+                        <p>Register v2</p>
+                      </a> </li>
+                    <li id="sidebarnav-node-12-1-sub-2" class="nav-item"> <a
+                        href="pages/examples/forgot-password-v2.html" class="nav-link"> <i
+                          class="nav-icon far fa-plus-square"></i>
+                        <p>Forgot Password v2</p>
+                      </a> </li>
+                    <li id="sidebarnav-node-12-1-sub-3" class="nav-item"> <a
+                        href="pages/examples/recover-password-V2.html" class="nav-link"> <i
+                          class="nav-icon far fa-plus-square"></i>
+                        <p>Recover Password v2</p>
+                      </a> </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/lockscreen.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Lockscreen</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/legacy-user-menu.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Legacy User Menu</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/language-menu.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Language Menu</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/404.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Error 404</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/500.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Error 500</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/pace.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Pace</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/examples/blank.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Blank Page</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="starter.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Starter Page</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li id="sidebarnav-node-13" class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-search"></i>
+                <p>
+                  Search
+                  <i class="fas fa-angle-left right"></i>
+
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="pages/search/simple.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Simple Search</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/search/enhanced.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Enhanced</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-header">MISCELLANEOUS</li>
+            <li id="sidebarnav-node-15" class="nav-item">
+              <a href="iframe.html" class="nav-link">
+                <i class="nav-icon fas fa-ellipsis-h"></i>
+                <p>
+                  Tabbed IFrame Plugin
+
+
+                </p>
+              </a>
+            </li>
+            <li id="sidebarnav-node-16" class="nav-item">
+              <a href="https://adminlte.io/docs/3.1/" class="nav-link">
+                <i class="nav-icon fas fa-file"></i>
+                <p>
+                  Documentation
+
+
+                </p>
+              </a>
+            </li>
+            <li class="nav-header">MULTI LEVEL EXAMPLE</li>
+            <li id="sidebarnav-node-18" class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fas fa-circle nav-icon"></i>
+                <p>
+                  Level 1
+
+
+                </p>
+              </a>
+            </li>
+            <li id="sidebarnav-node-19" class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-circle"></i>
+                <p>
+                  Level 1
+                  <i class="right fas fa-angle-left"></i>
+
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Level 2</p>
+                  </a>
+                </li>
+                <li id="sidebarnav-node-19-1" class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p> Level 2</p>
+                    <i class="right fas fa-angle-left"></i>
+                  </a>
+                  <ul class="nav nav-treeview">
+                    <li id="sidebarnav-node-19-1-sub-0" class="nav-item"> <a href="#" class="nav-link"> <i
+                          class="far fa-circle nav-icon"></i>
+                        <p>Level 3</p>
+                      </a> </li>
+                    <li id="sidebarnav-node-19-1-sub-1" class="nav-item"> <a href="#" class="nav-link"> <i
+                          class="far fa-circle nav-icon"></i>
+                        <p>Level 3</p>
+                      </a> </li>
+                    <li id="sidebarnav-node-19-1-sub-2" class="nav-item"> <a href="#" class="nav-link"> <i
+                          class="far fa-circle nav-icon"></i>
+                        <p>Level 3</p>
+                      </a> </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Level 2</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li id="sidebarnav-node-20" class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fas fa-circle nav-icon"></i>
+                <p>
+                  Level 1
+
+
+                </p>
+              </a>
+            </li>
+            <li class="nav-header">LABELS</li>
+            <li id="sidebarnav-node-22" class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon far fa-circle text-danger"></i>
+                <p>
+                  Important
+
+
+                </p>
+              </a>
+            </li>
+            <li id="sidebarnav-node-23" class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon far fa-circle text-warning"></i>
+                <p>
+                  Warning
+
+
+                </p>
+              </a>
+            </li>
+            <li id="sidebarnav-node-24" class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon far fa-circle text-info"></i>
+                <p>
+                  Informational
+
+
+                </p>
+              </a>
+            </li>
+          </ul>
+
+        </nav>
+      </div>
+    </aside>
+  </div>
+
+  <!-- jQuery -->
+  <script src="/static/plugins/jquery/jquery.min.js?version=1.0.0.1"></script>
+  <!-- jQuery UI 1.11.4 -->
+  <script src="/static/plugins/jquery-ui/jquery-ui.min.js?version=1.0.0.1"></script>
+  <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+  <script>
+    $.widget.bridge('uibutton', $.ui.button)
+  </script>
+  <!-- Bootstrap 4 -->
+  <script src="/static/plugins/bootstrap/js/bootstrap.bundle.min.js?version=1.0.0.1"></script>
+  <!-- ChartJS -->
+  <script src="/static/plugins/chart.js/Chart.min.js?version=1.0.0.1"></script>
+  <!-- Sparkline -->
+  <script src="/static/plugins/sparklines/sparkline.js?version=1.0.0.1"></script>
+  <!-- JQVMap -->
+  <script src="/static/plugins/jqvmap/jquery.vmap.min.js?version=1.0.0.1"></script>
+  <script src="/static/plugins/jqvmap/maps/jquery.vmap.usa.js?version=1.0.0.1"></script>
+  <!-- jQuery Knob Chart -->
+  <script src="/static/plugins/jquery-knob/jquery.knob.min.js?version=1.0.0.1"></script>
+  <!-- daterangepicker -->
+  <script src="/static/plugins/moment/moment.min.js?version=1.0.0.1"></script>
+  <script src="/static/plugins/daterangepicker/daterangepicker.js?version=1.0.0.1"></script>
+  <!-- Tempusdominus Bootstrap 4 -->
+  <script src="/static/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js?version=1.0.0.1"></script>
+  <!-- Summernote -->
+  <script src="/static/plugins/summernote/summernote-bs4.min.js?version=1.0.0.1"></script>
+  <!-- overlayScrollbars -->
+  <script src="/static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js?version=1.0.0.1"></script>
+  <!-- AdminLTE App -->
+  <script src="/static/dist/js/adminlte.js?v=3.2.0"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="/static/dist/js/demo.js?version=1.0.0.1"></script>
+  <!-- AdminLTE dashboard demo (This is only for demo purposes)   -->
+  <script src="/static/dist/js/pages/dashboard.js?version=1.0.0.1"></script>
+
+  <script type="text/javascript">
+    function decodeHTML(htmlString) {
+      let decoded = htmlString
+      let symbolMap = {
+        '&#160;': ' ', '&#60;': '<', '&#62;': '>', '&#38;': '&', '&#34;': '"', '&#39;': '\'', '&#162;': '¢', '&#163;': '£', '&#165;': '¥', '&#8364;': '€', '&#169;': '©', '&#174;': '®'
+
+      }
+      Object.keys(symbolMap).forEach((symbol) => {
+        decoded = decoded.toString().replaceAll(symbol, symbolMap[symbol])
+      })
+      return decoded;
+    }
+    const config = "{\"mongoBridgeURL\": \"http://127.0.0.1:5000/api/\", \"pouchDBPort\": 5984, \"pouchDBUsername\": \"neo\", \"pouchDBPassword\": \"Pasword123\", \"pouchDBDatabase\": \"dmarctoolkit\", \"pouchDBServer\": \"127.0.0.1\", \"syncInterval\": 1000000, \"syncInfo\": [{\"collectionName\": \"listingsAndReviews\", \"matchingFields\": [\"_id\"], \"watchedFields\": [\"last_review\"], \"selector\": {\"userID\": \"@userID\"}}]}"
+    const defaultComponents = "{\"preloader\": {\"image\": \"static/dist/img/AdminLTELogo.png\"}, \"navbar\": {\"navbarClass\": \"main-header navbar navbar-expand navbar-white navbar-light\", \"navLinks\": [{\"name\": \"Home\", \"href\": \"/index3.html\"}, {\"name\": \"Contact\", \"href\": \"#\"}], \"MediaDropdownItemList\": {\"navListClassName\": \"nav-item dropdown\", \"navIconClassName\": \"far fa-comments\", \"bagdeClassName\": \"badge badge-danger navbar-badge\", \"bagdeValue\": 3, \"dropdownListClassName\": \"dropdown-menu dropdown-menu-lg dropdown-menu-right\", \"footerText\": \"See All Messages\", \"mediaDropdownItems\": [{\"href\": \"#\", \"dropdownItemclass\": \"dropdown-item\", \"image\": \"static/dist/img/user1-128x128.jpg\", \"imageClass\": \"img-size-50 mr-3 img-circle\", \"mainText\": \"Brad Diesel\", \"subText\": \"Call me whenever you can...\", \"iconSpanClass\": \"float-right text-sm text-danger\", \"bodyIconClass\": \"fas fa-star\", \"footerIconClass \": \"far fa-clock mr-1\", \"footerText\": \"4 Hours Ago\"}, {\"href\": \"#\", \"dropdownItemclass\": \"dropdown-item\", \"image\": \"static/dist/img/user8-128x128.jpg\", \"imageClass\": \"img-size-50 mr-3 img-circle mr-3\", \"mainText\": \" John Pierce\", \"subText\": \"I got your message bro\", \"iconSpanClass\": \"float-right text-sm text-muted\", \"bodyIconClass\": \"fas fa-star\", \"footerIconClass \": \"far fa-clock mr-1\", \"footerText\": \"4 Hours Ago\"}, {\"href\": \"#\", \"dropdownItemclass\": \"dropdown-item\", \"image\": \"static/dist/img/user3-128x128.jpg\", \"imageClass\": \"img-size-50 mr-3 img-circle mr-3\", \"mainText\": \"Nora Silvester\", \"subText\": \"The subject goes here\", \"iconSpanClass\": \"float-right text-sm text-warning\", \"bodyIconClass\": \"fas fa-star\", \"footerIconClass \": \"far fa-clock mr-1\", \"footerText\": \"4 Hours Ago\"}]}, \"NavDropdownItemList\": {\"dropdownItemClass\": \"nav-item dropdown\", \"href\": \"#\", \"iconClass\": \"far fa-bell\", \"spanClass\": \"badge badge-warning navbar-badge\", \"spanText\": 15, \"dropdownMenuClass\": \"dropdown-menu dropdown-menu-lg dropdown-menu-right\", \"dropdownHeaderClass\": \"dropdown-item dropdown-header\", \"dropdownHeaderText\": \"Notifications\", \"footerText\": \"See All Notifications\", \"navDropdownItems\": [{\"href\": \"#\", \"dropdownItemclass\": \"dropdown-item\", \"iconClass\": \"fas fa-envelope mr-2\", \"mainText\": \"4 new messages\", \"rightSpanClass\": \"float-right text-muted text-sm\", \"rightSpanText\": \"3 mins\"}, {\"href\": \"#\", \"dropdownItemclass\": \"dropdown-item\", \"iconClass\": \"fas fa-users mr-2\", \"mainText\": \"8 friend requests\", \"rightSpanClass\": \"float-right text-muted text-sm\", \"rightSpanText\": \"12 hours\"}, {\"href\": \"#\", \"dropdownItemclass\": \"dropdown-item\", \"iconClass\": \"fas fa-file mr-2\", \"mainText\": \"3 new reports\", \"rightSpanClass\": \"float-right text-muted text-sm\", \"rightSpanText\": \"2 days\"}]}}, \"sidebar\": {\"asideClass\": \"main-sidebar sidebar-dark-primary elevation-4\", \"sidebarLogo\": {\"href\": \"index3.html\", \"className\": \"brand-link\", \"image\": \"static/dist/img/AdminLTELogo.png\", \"imageClass\": \"brand-image img-circle elevation-3\", \"imageStyle\": \"opacity: 0.8\", \"spanClass\": \"brand-text font-weight-light\", \"spanText\": \"AdminLTE 3\", \"actions\": {\"event\": \"onClick\", \"functionName\": \"$.fn.showText(\u0027@id\u0027,\u0027@spanText\u0027)\", \"parameters\": {\"@id\": \"id\", \"@spanText\": \"spanText\"}}}, \"sidebarClass\": \"sidebar\", \"sidebarUserInfo\": {\"href\": \"#\", \"className\": \"user-panel mt-3 pb-3 mb-3 d-flex\", \"image\": \"static/dist/img/user2-160x160.jpg\", \"imageClass\": \"img-circle elevation-2\", \"username\": \"Alexander Pierce\"}, \"sidebarNav\": {\"navClass\": \"mt-2\", \"menuClass\": \"nav nav-pills nav-sidebar flex-column\", \"menuWidget\": \"treeview\", \"dataAccordion\": \"false\", \"sidebarNavItems\": {\"sidebarNavItemList\": [{\"itemClass\": \"nav-item\", \"href\": \"#\", \"navLinkClass\": \"nav-link\", \"itemIconClass\": \"nav-icon fas fa-tachometer-alt\", \"text\": \"Dashboard\", \"subIconClass\": \"right fas fa-angle-left\", \"spanClass\": \"\", \"spanText\": \"\", \"position\": 0, \"subNavItemList\": [{\"navAnchorClass\": \"nav-link\", \"href\": \"/index.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Dashboard v1\"}, {\"href\": \"/index2.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Dashboard v2\"}, {\"href\": \"/index3.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Dashboard v3\"}]}, {\"href\": \"pages/widgets.html\", \"itemIconClass\": \"nav-icon fas fa-th\", \"text\": \"Widgets\", \"spanClass\": \"right badge badge-danger\", \"spanText\": \"New\", \"position\": 1, \"subNavItemList\": []}, {\"href\": \"\", \"itemIconClass\": \"nav-icon fas fa-copy\", \"subIconClass\": \"fas fa-angle-left right\", \"text\": \"Layout Options\", \"spanClass\": \"badge badge-info right\", \"spanText\": 6, \"position\": 2, \"subNavItemList\": [{\"href\": \"pages/layout/top-nav.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Top Navigation\"}, {\"href\": \"pages/layout/top-nav-sidebar.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Top Navigation + Sidebar\"}, {\"href\": \"pages/layout/boxed.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Boxed\"}, {\"href\": \"pages/layout/fixed-sidebar.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Fixed Sidebar\"}, {\"href\": \"pages/layout/fixed-sidebar-custom.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Fixed Sidebar \u003csmall\u003e Custom Area\u003c/small\u003e\"}, {\"href\": \"pages/layout/fixed-topnav.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Fixed Navbar\"}, {\"href\": \"pages/layout/fixed-footer.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Fixed Footer\"}, {\"href\": \"pages/layout/collapsed-sidebar.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Collapsed Sidebar\"}, {\"href\": \"pages/layout/collapsed-sidebar.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Collapsed Sidebar\"}]}, {\"href\": \"#\", \"itemIconClass\": \"nav-icon fas fa-chart-pie\", \"text\": \"Charts\", \"position\": 3, \"subIconClass\": \"right fas fa-angle-left\", \"subNavItemList\": [{\"href\": \"pages/charts/chartjs.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"ChartJS\"}, {\"href\": \"pages/charts/flot.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Flot\"}, {\"href\": \"pages/charts/inline.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Inline\"}, {\"href\": \"pages/charts/uplot.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"uPlot\"}]}, {\"href\": \"#\", \"itemIconClass\": \"nav-icon fas fa-tree\", \"text\": \"UI Elements\", \"subIconClass\": \"fas fa-angle-left right\", \"position\": 4, \"subNavItemList\": [{\"href\": \"pages/UI/general.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"General\"}, {\"href\": \"pages/UI/icons.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Icons\"}, {\"href\": \"pages/UI/buttons.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Buttons\"}, {\"href\": \"pages/UI/sliders.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Sliders\"}, {\"href\": \"pages/UI/modals.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Modals \u0026 Alerts\"}, {\"href\": \"pages/UI/navbar.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Navbar \u0026 Tabs\"}, {\"href\": \"pages/UI/timeline.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Timeline\"}, {\"href\": \"pages/UI/ribbons.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Ribbons\"}]}, {\"href\": \"#\", \"itemIconClass\": \"nav-icon fas fa-edit\", \"text\": \"Forms\", \"subIconClass\": \"fas fa-angle-left right\", \"position\": 5, \"subNavItemList\": [{\"href\": \"pages/forms/general.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"General Elements\"}, {\"href\": \"pages/forms/advanced.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Advanced Elements\"}, {\"href\": \"pages/forms/editors.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Editors\"}, {\"href\": \"pages/forms/validation.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Validation\"}]}, {\"href\": \"#\", \"itemIconClass\": \"nav-icon fas fa-table\", \"text\": \"Tables\", \"position\": 5, \"subIconClass\": \"fas fa-angle-left right\", \"subNavItemList\": [{\"href\": \"pages/tables/simple.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Simple Tables\"}, {\"href\": \"pages/tables/data.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"DataTables\"}, {\"href\": \"pages/tables/jsgrid.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"jsGrid\"}, {\"href\": \"pages/forms/validation.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Validation\"}]}, {\"href\": \"pages/calendar.html\", \"itemIconClass\": \"nav-icon far fa-calendar-alt\", \"text\": \"Calendar\", \"spanClass\": \"badge badge-info right\", \"spanText\": \"2\", \"position\": 7, \"subNavItemList\": []}, {\"href\": \"pages/gallery.html\", \"itemIconClass\": \"nav-icon far fa-image\", \"text\": \"Gallery\", \"position\": 8}, {\"href\": \"pages/kanban.html\", \"itemIconClass\": \"nav-icon fas fa-columns\", \"text\": \"  Kanban Board\", \"position\": 9}, {\"href\": \"#\", \"itemIconClass\": \"nav-icon far fa-envelope\", \"text\": \"Mailbox\", \"position\": 10, \"subIconClass\": \"fas fa-angle-left right\", \"subNavItemList\": [{\"href\": \"pages/mailbox/mailbox.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Inbox\"}, {\"href\": \"pages/mailbox/compose.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Compose\"}, {\"href\": \"pages/mailbox/read-mail.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Read\"}]}, {\"href\": \"#\", \"itemIconClass\": \"nav-icon fas fa-book\", \"text\": \"Pages\", \"position\": 11, \"subIconClass\": \"fas fa-angle-left right\", \"subNavItemList\": [{\"href\": \"pages/examples/invoice.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Invoice\"}, {\"href\": \"pages/examples/profile.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Profile\"}, {\"href\": \"pages/examples/e-commerce.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"E-commerce\"}, {\"href\": \"pages/examples/projects.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Projects\"}, {\"href\": \"pages/examples/project-add.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Project Add\"}, {\"href\": \"pages/examples/project-edit.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Project Edit\"}, {\"href\": \"pages/examples/project-detail.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Project Detail\"}, {\"href\": \"pages/examples/contacts.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Contacts\"}, {\"href\": \"pages/examples/faq.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"FAQ\"}, {\"href\": \"pages/examples/contact-us.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Contact us\"}]}, {\"href\": \"#\", \"itemIconClass\": \"nav-icon far fa-plus-square\", \"text\": \"Extras\", \"position\": 12, \"subIconClass\": \"fas fa-angle-left right\", \"subNavItemList\": [{\"href\": \"#\", \"itemIconClass\": \"nav-icon far fa-plus-square\", \"text\": \"Login \u0026 Register v1\", \"subIconClass\": \"fas fa-angle-left right\", \"subNavItemList\": [{\"href\": \"pages/examples/login.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Login v1\"}, {\"href\": \"pages/examples/register.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Register v1\"}, {\"href\": \"pages/examples/forgot-password.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Forgot Password v1\"}, {\"href\": \"pages/examples/recover-password.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Recover Password v1\"}]}, {\"href\": \"#\", \"itemIconClass\": \"nav-icon far fa-plus-square\", \"text\": \"Login \u0026 Register v2\", \"subIconClass\": \"fas fa-angle-left right\", \"subNavItemList\": [{\"href\": \"pages/examples/login-v2.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Login v2\"}, {\"href\": \"pages/examples/register-v2.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Register v2\"}, {\"href\": \"pages/examples/forgot-password-v2.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Forgot Password v2\"}, {\"href\": \"pages/examples/recover-password-V2.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Recover Password v2\"}]}, {\"href\": \"pages/examples/lockscreen.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Lockscreen\"}, {\"href\": \"pages/examples/legacy-user-menu.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Legacy User Menu\"}, {\"href\": \"pages/examples/language-menu.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Language Menu\"}, {\"href\": \"pages/examples/404.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Error 404\"}, {\"href\": \"pages/examples/500.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Error 500\"}, {\"href\": \"pages/examples/pace.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Pace\"}, {\"href\": \"pages/examples/blank.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Blank Page\"}, {\"href\": \"starter.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Starter Page\"}]}, {\"href\": \"#\", \"itemIconClass\": \"nav-icon fas fa-search\", \"text\": \"Search\", \"position\": 13, \"subIconClass\": \"fas fa-angle-left right\", \"subNavItemList\": [{\"href\": \"pages/search/simple.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Simple Search\"}, {\"href\": \"pages/search/enhanced.html\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Enhanced\"}]}, {\"href\": \"iframe.html\", \"position\": 15, \"itemIconClass\": \"nav-icon fas fa-ellipsis-h\", \"text\": \"Tabbed IFrame Plugin\"}, {\"href\": \"https://adminlte.io/docs/3.1/\", \"position\": 16, \"itemIconClass\": \"nav-icon fas fa-file\", \"text\": \"Documentation\"}, {\"href\": \"#\", \"itemIconClass\": \"fas fa-circle nav-icon\", \"position\": 18, \"text\": \"Level 1\"}, {\"href\": \"#\", \"itemIconClass\": \"nav-icon fas fa-circle\", \"text\": \" Level 1\", \"position\": 19, \"subIconClass\": \"right fas fa-angle-left\", \"subNavItemList\": [{\"href\": \"#\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Level 2\"}, {\"href\": \"#\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \" Level 2\", \"subIconClass\": \"right fas fa-angle-left\", \"subNavItemList\": [{\"href\": \"#\", \"itemIconClass\": \"far fa-dot-circle nav-icon\", \"text\": \"Level 3\"}, {\"href\": \"#\", \"itemIconClass\": \"far fa-dot-circle nav-icon\", \"text\": \"Level 3\"}, {\"href\": \"#\", \"itemIconClass\": \"far fa-dot-circle nav-icon\", \"text\": \"Level 3\"}]}, {\"href\": \"#\", \"itemIconClass\": \"far fa-circle nav-icon\", \"text\": \"Level 2\"}]}, {\"href\": \"#\", \"itemIconClass\": \"fas fa-circle nav-icon\", \"position\": 20, \"text\": \"Level 1\"}, {\"href\": \"#\", \"itemIconClass\": \"nav-icon far fa-circle text-danger\", \"position\": 22, \"text\": \"Important\"}, {\"href\": \"#\", \"itemIconClass\": \"nav-icon far fa-circle text-warning\", \"position\": 23, \"text\": \"Warning\"}, {\"href\": \"#\", \"itemIconClass\": \"nav-icon far fa-circle text-info\", \"position\": 24, \"text\": \"Informational\"}], \"sidebarHeaderList\": [{\"position\": 6, \"text\": \"EXAMPLES\"}, {\"position\": 14, \"text\": \"MISCELLANEOUS\"}, {\"position\": 17, \"text\": \"MULTI LEVEL EXAMPLE\"}, {\"position\": 21, \"text\": \"LABELS\"}]}}}}"
+    window.config = JSON.parse(config)
+    window.defaultComponents = JSON.parse(defaultComponents)
+    console.log(window.config)
+    console.log(window.defaultComponents)
+  </script>
+  <script src="/static/dist/custom/js/data/pouchdb.js"></script>
+  <script src="/static/dist/custom/js/data/pouchdb.find.js"></script>
+  <script type="module" src="/static/dist/custom/js/main.js?version=1.0.0.1"></script>
+
+
+
+  <div class="jqvmap-label" style="display: none;"></div>
+</body>
+
+</html>

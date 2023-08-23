@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+ {% include "main/header.html" %}
+<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed" id="body-tag">
+<div class="wrapper">
+   {% include "main/navbar.html" %}
+   {% include "main/sidebar.html" %}
+   {% include "main/contents.html" %}
+   {% include "main/footer.html" %}
+   {% include "main/modal.html" %}
+ </div>
+  {% include "main/scripts.html" %}
+</body>
+</html>
+ 

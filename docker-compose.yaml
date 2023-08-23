@@ -1,0 +1,25 @@
+---
+services:
+  queue:
+    image: redis
+    ports:
+      - 6379:6379
+  db:
+    image: mongo
+    ports:
+      - 27017
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=mongo
+      - MONGO_INITDB_ROOT_PASSWORD=Park123!
+  web:
+    image: neoandrey/dmarc
+    ports:
+      - 5000:5000
+    environment:
+      - MONGODB_URL=mongodb://mongo:Park123!@db:27017
+      - MONGODB_DB=dmarcdb
+      - REDIS_URL=redis://queue:6379
+      - REDIS_QUEUE_NAME=DMARC
+    depends_on:
+      - queue
+      - db

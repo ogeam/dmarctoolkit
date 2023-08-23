@@ -1,0 +1,70 @@
+<!-- REQUIRED SCRIPTS -->
+<!-- jQuery -->
+<script src="{{ url_for('static', filename='plugins/jquery/jquery.min.js') }}"></script>
+<!-- Bootstrap -->
+<script src="{{ url_for('static', filename='plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<!-- overlayScrollbars -->
+<script src="{{ url_for('static', filename='plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js') }}"></script>
+<!-- AdminLTE App -->
+<script src="{{ url_for('static', filename='dist/js/adminlte.js') }}"></script>
+<!-- OPTIONAL SCRIPTS -->
+<script src="{{ url_for('static', filename='dist/js/demo.js') }}"></script>
+<!-- PAGE PLUGINS -->
+<!-- jQuery Mapael -->
+<script src="{{ url_for('static', filename='plugins/jquery-mousewheel/jquery.mousewheel.js') }}"></script>
+<script src="{{ url_for('static', filename='plugins/raphael/raphael.min.js')}}"></script>
+<script src="{{ url_for('static', filename='plugins/jquery-mapael/jquery.mapael.min.js') }}"></script>
+<script src="{{ url_for('static', filename='plugins/jquery-mapael/maps/usa_states.min.js') }}"></script>
+<!-- ChartJS -->
+<script src="{{ url_for('static', filename='plugins/chart.js/Chart.min.js') }}"></script>
+<!-- PAGE SCRIPTS -->
+<script src="{{ url_for('static', filename='dist/js/pages/dashboard.js', version='3.2.0') }}"></script>
+<!-- Socket IO -->
+<!--<script src="{{ url_for('static', filename='dist/js/socket.io.js', version='1.0.0.1') }}"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    let pageUrl = window.location.toString();
+    let socketURL = "";
+    if( pageUrl.indexOf('/index')> 0){
+          socketURL = pageUrl.split('/index')[0];
+    }else  if( pageUrl.split('/').length==4){
+          socketURL = pageUrl.replace('#','').replace('?','');
+    }else if( pageUrl.split('/').length>4){
+          socketURL = pageUrl.split('/')[0]+pageUrl.split('/')[1]+pageUrl.split('/')[2]+pageUrl.split('/')[3];
+    }else{
+     socketURL = socketURL;
+    }
+    $.fn.socket = io(socketURL, {transports: ["websocket", "polling"] });
+     $.fn.socket.on('connect',function(){
+          $.fn.socket.emit('client_connected',{data:"testsend"});
+     });
+      $.fn.socket.on('update',function(data){
+            console.log(data)
+      });
+      
+});
+</script> 
+<script src="{{ url_for('static', filename='dist/js/custom/socket.io.client.js', version='1.0.0.1') }}"></script>
+-->
+<!-- Others -->
+
+<!-- PouchDB-->
+
+<script src="{{ url_for('static', filename='dist/js/pouchdb-7.3.0.min.js', version='1.0.0.1') }}"></script>
+<script src="{{ url_for('static', filename='dist/js/pouchdb.find.js', version='1.0.0.1') }}"></script>
+
+<script src="{{ url_for('static', filename='dist/js/custom/Common.js', version='1.0.0.1') }}"></script>
+
+<script type="module" src="{{ url_for('static', filename='dist/js/custom/csap.js', version='1.0.0.1') }}"></script>
+
+<script src="{{ url_for('static', filename='dist/js/custom/moment.js', version='1.0.0.1') }}"></script>
+<script src="{{ url_for('static', filename='dist/js/datetimepicker.js', version='1.0.0.1') }}"></script>
+<!-- DataTables -->
+<script src="{{ url_for('static', filename='plugins/datatables/jquery.dataTables.min.js') }}"></script>
+<script src="{{ url_for('static', filename='plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+<!--  Bootstrap 3.3.7 -->
+<script
+      src="{{ url_for('static', filename='plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
+<script
+      src="{{ url_for('static', filename='plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
+<script src="{{ url_for('static', filename='dist/js/bstreeview.min.js', version='1.0.0.1') }}"></script>

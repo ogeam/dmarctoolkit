@@ -1,0 +1,97 @@
+{
+ "SITE_NAME": "DMARCTOOLKIT"
+ ,"SITE_ID": "DTK"
+ ,"SECRET_KEY":"Some emails actually contain valuable messages"
+ ,"STARTUP_MESSAGE":"Starting DMARC TOOLKIT"
+,"SESSION_TYPE": "filesystem"
+,"REDIS_URL"  :  "redis://queue:6379"
+,"REDIS_QUEUE_NAME": "DMARC_QUEUE"
+,"SQLALCHEMY_DATABASE_URI":""
+,"SQLALCHEMY_TRACK_MODIFICATIONS" :false
+,"CIPHER_COUNT" :2
+,"MONGODB_URL"      :"mongodb://mongo:Park123!@db:27017/"
+,"MONGODB_DB"      :"dmarcdb"
+,"MONGODB_HOST" : "db"
+,"MONGODB_PORT": 27017
+,"MONGODB_USERNAME" : "mongo"
+,"MONGODB_PASSWORD"  : "Park123!"
+,"MONGODB_USE_SSL"   : false
+,"MONGODB_REPLICASET"   : ""
+,"MONGODB_DIRECT_CONNECTION"   : "true"
+,"MONGODB_AUTH_MECHANISM"   : "DEFAULT"
+,"LOG_TO_STDOUT" : true
+,"MAIL_SERVER" : "smtp.gmail.com"
+,"MAIL_PORT" : 25
+,"MAIL_USE_TLS" : false
+,"MAIL_USERNAME" : ""
+,"MAIL_PASSWORD" : ""
+,"ADMINS" :[""]
+,"LANGUAGES" :["en", "es"]
+,"MONGODB_CONNECT": true
+,"MS_TRANSLATOR_KEY" :""
+,"RECORDS_PER_PAGE" :500
+,"MAX_CONTENT_LENGTH" :  "8388608"
+
+,"MONGO_BRIDGE_URL"     : "/api/sync/"     
+,"POUCHDB_PORT"         : 5984
+,"POUCHDB_USERNAME"     : ""
+,"POUCHDB_PASSWORD"    : ""
+,"POUCHDB_DATABASE"     : "dmarctoolkit"
+,"POUCHDB_SERVER"      : "127.0.0.1"
+,"SYNC_INTERVAL"       :  5000
+,"UPLOAD_EXTENSIONS"   : ["xml","txt","csv","zip","gz","gzip","tar","tgz"]
+  ,"SYNC_INFO"           : [  {"collectionName": "ReportMetadata"
+                                , "matchingFields":["table_name","table_name"]
+                                , "watchedFields": ["report_metadata_end_date"]
+                                , "selector":{}
+                                , "mode":"update"
+                                , "idField":"report_id"
+                                }
+                                  ,  {"collectionName": "ReportUploads"
+                                  , "matchingFields":["table_name"]
+                                  , "watchedFields": ["last_modified_date"]
+                                  , "selector":{}
+                                  , "mode":"update"
+                                 
+                                  }
+                                ,  {"collectionName": "ReportRecords"
+                                , "matchingFields":["table_name"]
+                                , "watchedFields": ["last_modified_date"]
+                                , "selector":{}
+                                , "mode":"update"
+                                , "idField":"report_record_id"
+                                }
+                                ,  {"collectionName": "DmarcRecords"
+                                , "matchingFields":["table_name"]
+                                , "watchedFields": ["last_modified_date"]
+                                , "selector":{}
+                                , "mode":"append"
+                                , "idField":"record_id"
+                                } 
+                                ,  {"collectionName": "Jobs"
+                                , "matchingFields":["table_name"]
+                                , "watchedFields": ["last_modified_date"]
+                                , "selector":{}
+                                , "mode":"update"
+                                }
+                                ,  {"collectionName": "Schedules"
+                                , "matchingFields":["table_name"]
+                                , "watchedFields": ["last_modified_date"]
+                                , "selector":{}
+                                , "mode":"update"
+                                },  {"collectionName": "ReportEmails"
+                                , "matchingFields":["table_name"]
+                                , "watchedFields": ["last_modified_date"]
+                                , "selector":{}
+                                , "mode":"update"
+                                } ,  {"collectionName": "ReportUploads"
+                                , "matchingFields":["table_name"]
+                                , "watchedFields": ["last_modified_date"]
+                                , "selector":{}
+                                , "mode":"update"
+                                }
+                              ]
+ ,"SYNC_MODE": "ONLINE"
+ ,"TIME_OUT_MINUTES" : 5
+                              
+}
